@@ -1,0 +1,26 @@
+html {
+  @include font-legibility;
+  font-family: $base-font;
+}
+
+p {
+  margin: 0 0 $base-spacing;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: $font-regular;
+}
+
+h1 {
+  font-size: $primary-font-xl;
+}
+
+h2 {
+  font-size: $primary-font-xl;
+}

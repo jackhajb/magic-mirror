@@ -1,0 +1,77 @@
+// Colors
+// http://chir.ag/projects/name-that-color/
+
+// Blacks
+$black: #000000;
+$ebony-clay: #212b36;
+
+// Whites
+$white: #ffffff;
+
+// Blues
+$jacarta: #2B296D;
+$scooter: #32c1de;
+$steel-blue: #4775b6;
+$robins-egg-blue: #00C4E2;
+$pale-sky: #637381;
+
+// Greys
+$alto: #D8D8D8;
+$dusty-gray: #979797;
+$heather: #C4CDD5;
+$alabaster: #f7f7f7;
+
+// Browns
+$sorrell-brown: #CAB592;
+
+// Reds
+$cinnabar: #EB4848;
+
+// ----------------------
+// Text
+$color-text-primary: $jacarta;
+$color-text-secondary: $ebony-clay;
+$color-text-tertiary: $white;
+$color-text-quaternary: $sorrell-brown;
+$color-text-quinary: $scooter;
+$color-text-senary: $pale-sky;
+$color-disabled-text: rgb(153, 153, 153);
+
+// Borders
+$color-border-primary: $alto;
+$color-border-secondary: $dusty-gray;
+$color-border-tertiary: $robins-egg-blue;
+$color-border-quaternary: $heather;
+$color-border-quinary: $jacarta;
+$color-border-senary: $scooter;
+$color-border-septenary: $sorrell-brown;
+
+// Backgrounds
+$color-background-primary: $jacarta;
+$color-background-secondary: $scooter;
+$color-background-tertiary: $white;
+$color-background-quaternary: $ebony-clay;
+$color-background-quinary: $heather;
+$color-background-senary: $alabaster;
+$color-background-septenary: $alto;
+$color-background-octonary: $cinnabar;
+$color-disabled-input-background: $alabaster;
+
+// Hover
+$color-hover-primary: $jacarta;
+$color-hover-secondary: $steel-blue;
+
+// Error
+$color-error-primary: $cinnabar;
+$color-success-primary: #02c7b1;
+
+// Placeholder
+$color-placeholder-primary: $alto;
+
+// Active
+$color-active-primary: $steel-blue;
+
+$color-accepted: $sorrell-brown;
+$color-rejected: $cinnabar;
+
+$color-link-default: $scooter;

@@ -1,0 +1,76 @@
+// Variables
+
+// Fonts
+$base-font: 'rubik', sans-serif;
+$base-font-size: 16;
+
+// Content Width
+$width-page-content-max: 75rem;
+$width-page-content-max--small: 49.375rem;
+
+// Base Spacer
+$base-spacing: 0.5rem; // 8px
+
+// Body Padding
+$body-padding--desktop: 4 * $base-spacing;
+$body-padding--mobile: 2 * $base-spacing;
+
+// Footer
+$footer-height--mobile: 3.5rem;
+$footer-height--desktop: 5.5rem;
+
+// Timing
+$timing-primary: 200ms;
+
+// Header
+$header-height--desktop: 5rem;
+
+// Z Indexes
+$header-z-index: 200;
+
+// Authentication
+$auth-container-width-small--desktop: 30rem;
+$auth-container-height-small--desktop: 26.5rem;
+
+$auth-container-width-large--desktop: 31rem; // 496px
+$auth-container-height-large--desktop: 39rem; // 624px
+
+$auth-inner-container-width: 21.25rem; // 340px
+
+// Fonts
+$primary-font-xxxl: 3.6rem; // 60px
+$primary-font-xxl: 2.8125rem; // 45px
+$primary-font-xl: 2.625rem; // 42px
+$primary-font-l1: 1.875rem; // 30px
+$primary-font-l: 1.625rem; // 26px
+$primary-font-m: 1rem; // 16px
+$primary-font-s: 0.875rem; // 14px
+$primary-font-xs: 0.75rem; // 12px
+
+$secondary-font-l1: 1.25rem; // 20px
+$secondary-font-l2: 1.75rem; // 28px
+$secondary-font-l3: 2rem; // 32px
+$secondary-font-m1: 1.125rem; // 18px
+$secondary-font-xs1: 0.625rem; // 10px
+
+$font-medium: 500;
+$font-regular: 400;
+
+// Border Radius
+$border-radius-primary: 0.25rem;
+$border-radius-secondary: 0.875rem;
+
+// Transitions
+$all-transition: all 0.1s ease-in-out;
+
+// FIXME: Needed for sass-lint
+@mixin root-prop($prop: null, $value: null) {
+	@if ($prop and $value) {
+		#{$prop}: $value;
+	}
+}
+
+:root {
+  @include root-prop(--conversation-textarea-height, 4.25rem)
+  // --conversation-textarea-height: 4.25rem;
+}

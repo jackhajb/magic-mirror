@@ -1,0 +1,5 @@
+.text-link {
+  @include reset-a;
+  color: $color-text-quinary;
+  text-decoration: underline;
+}

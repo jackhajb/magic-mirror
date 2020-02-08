@@ -1,0 +1,93 @@
+.btn {
+  @include reset-button;
+  @include reset-a;
+}
+
+@mixin button($background-color, $text-color: $color-text-tertiary) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all $timing-primary;
+  padding: $base-spacing;
+  cursor: pointer;
+  height: rem(48);
+  color: $text-color;
+  background-color: $background-color;
+  border-radius: $border-radius-primary;
+  font-weight: 500;
+  font-size: $primary-font-s;
+  width: 100%;
+}
+
+.btn__icon {
+  height: 1rem;
+  display: inline-block;
+  padding: 0 $base-spacing;
+}
+
+.btn--primary {
+  @include button($color-background-secondary);
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $color-hover-secondary;
+  }
+}
+
+.btn--secondary {
+  @include button($color-background-primary);
+
+  &:not(:disabled):hover {
+    background-color: lighten($color-background-primary, 10%);
+  }
+}
+
+.btn--alert {
+  @include button($color-error-primary);
+
+  background-color: transparent;
+  border: 1px solid $color-error-primary;
+  color: $color-error-primary;
+
+  &:hover {
+    background-color: $color-error-primary;
+    color: white;
+  }
+}
+
+.btn--alert-non-transparent {
+  @include button($color-error-primary);
+
+  &:hover {
+    background-color: darken($color-error-primary, 10%);
+    color: white;
+  }
+}
+
+.btn--solid-alert {
+  @include button($color-error-primary);
+}
+
+.btn--tall {
+  height: rem(80);
+
+  .btn__icon {
+    height: rem(48);
+  }
+}
+
+.btn--tertiary {
+  @include button($color-background-septenary, $color-text-secondary);
+
+  &:hover {
+    background-color: $color-background-octonary;
+    color: $color-text-tertiary;
+  }
+}
+
+.btn--short {
+  height: rem(36);
+}
