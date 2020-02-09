@@ -1,5 +1,5 @@
 import { OpenWeatherService } from "../services/weather.service";
-import * as fakeData from '../api/open-weather-zip.json'
+import * as fakeData from '../data/open-weather/open-weather-zip.json'
 
 export const fetchWeather = async (dispatch) => {
   try {
