@@ -1,0 +1,5 @@
+Run the second command from the data folder
+
+protoc --proto_path=src --js_out=library=whizz/ponycopter,binary:build/gen src/foo.proto src/bar/baz.proto
+
+protoc -I=mta-proto --js_out=. gtfs-realtime.proto
